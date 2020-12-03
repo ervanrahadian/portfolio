@@ -1,0 +1,13 @@
+{
+  "hosting": {
+    "public": "/",
+    "site": "ervanrahadian",
+    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}
