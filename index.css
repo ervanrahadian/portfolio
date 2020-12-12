@@ -1,14 +1,17 @@
 .navbar {
   background-color: rgb(20, 20, 100);
-  box-shadow: 0 2px 10px rgb(0, 0, 0);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.64), 0 4px 8px rgba(0, 0, 0, 0.32);
 }
 
 .navbar .navbar-toggler {
-  border: 1px solid rgb(255, 255, 255);
+  padding: 0 10px 0 10px;
+  border: none;
+  outline: none;
 }
 
 .down {
   color: rgb(255, 255, 255);
+  font-size: 40px;
 }
 
 .navbar-brand {
@@ -305,13 +308,13 @@ ion-icon {
 }
 
 #profile {
-  box-shadow: 0 5px 20px rgb(0, 0, 0);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.64), 0 4px 8px rgba(0, 0, 0, 0.32);
   margin-bottom: 10px;
 }
 
 #profileText {
   color: rgb(255, 255, 255);
-  text-shadow: 0 5px 20px rgb(0, 0, 0);
+  text-shadow: 0 10px 20px rgba(0, 0, 0, 0.64), 0 4px 8px rgba(0, 0, 0, 0.32);
 }
 
 #profile:hover {
@@ -362,7 +365,7 @@ ion-icon {
   height: 60px;
   width: 60px;
   border-radius: 100px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.24), 0 4px 8px rgba(0, 0, 0, 0.12);
 }
 
 #myBtn:hover {
