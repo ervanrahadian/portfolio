@@ -1,6 +1,6 @@
 .navbar {
   background-color: rgb(20, 20, 100);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.64), 0 4px 8px rgba(0, 0, 0, 0.32);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.48), 0 4px 8px rgba(0, 0, 0, 0.24);
 }
 
 .navbar .navbar-toggler {
@@ -9,7 +9,7 @@
   outline: none;
 }
 
-.down {
+.menu {
   color: rgb(255, 255, 255);
   font-size: 40px;
 }
@@ -308,13 +308,13 @@ ion-icon {
 }
 
 #profile {
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.64), 0 4px 8px rgba(0, 0, 0, 0.32);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.48), 0 4px 8px rgba(0, 0, 0, 0.24);
   margin-bottom: 10px;
 }
 
 #profileText {
   color: rgb(255, 255, 255);
-  text-shadow: 0 10px 20px rgba(0, 0, 0, 0.64), 0 4px 8px rgba(0, 0, 0, 0.32);
+  text-shadow: 0 10px 20px rgba(0, 0, 0, 0.48), 0 4px 8px rgba(0, 0, 0, 0.24);
 }
 
 #profile:hover {
