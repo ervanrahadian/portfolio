@@ -5,8 +5,6 @@
 
 .navbar .navbar-toggler {
   border: 1px solid rgb(255, 255, 255);
-  height: 45px;
-  width: 60px;
 }
 
 .down {
@@ -354,7 +352,7 @@ ion-icon {
   display: none;
   position: fixed;
   bottom: 65px;
-  right: 7px;
+  right: 8px;
   z-index: 99;
   border: none;
   outline: none;
