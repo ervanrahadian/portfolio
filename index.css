@@ -1,10 +1,16 @@
-html {
-  scroll-behavior: smooth;
-}
-
 .navbar {
   background-color: rgb(20, 20, 100);
   box-shadow: 0 2px 10px rgb(0, 0, 0);
+}
+
+.navbar .navbar-toggler {
+  border: 1px solid rgb(255, 255, 255);
+  height: 45px;
+  width: 60px;
+}
+
+.down {
+  color: rgb(255, 255, 255);
 }
 
 .navbar-brand {
@@ -12,14 +18,6 @@ html {
   align-items: center;
   font-size: 24px;
   font-weight: 700;
-}
-
-.navbar-dark .navbar-toggler {
-  border: 1px solid rgb(0, 140, 255);
-}
-
-.navbar-dark .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgb%280, 140, 255%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 
 .navbar-nav {
@@ -287,12 +285,16 @@ html {
   color: rgb(255, 255, 255);
 }
 
-ion-icon {
-  font-size: 50px;
+html {
+  scroll-behavior: smooth;
 }
 
 section {
   min-height: 420px;
+}
+
+ion-icon {
+  font-size: 50px;
 }
 
 #nav-link {
@@ -359,8 +361,10 @@ section {
   background-color: rgb(20, 20, 100);
   color: rgb(255, 255, 255);
   cursor: pointer;
-  padding: 10px;
-  border-radius: 10px;
+  height: 60px;
+  width: 60px;
+  border-radius: 100px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0);
 }
 
 #myBtn:hover {
