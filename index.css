@@ -4,7 +4,7 @@
 }
 
 .navbar .navbar-toggler {
-  padding: 0 10px 0 10px;
+  padding: 0;
   border: none;
   outline: none;
 }
@@ -280,6 +280,7 @@
 }
 
 .footer {
+  height: 62px;
   background-color: rgb(20, 20, 100);
   font-size: 18px;
   font-weight: 500;
@@ -354,8 +355,8 @@ ion-icon {
 #myBtn {
   display: none;
   position: fixed;
-  bottom: 65px;
-  right: 8px;
+  bottom: 70px;
+  right: 10px;
   z-index: 99;
   border: none;
   outline: none;
