@@ -35,6 +35,7 @@
 .jumbotron {
   background-image: url("img/HomeGif.gif");
   background-size: cover;
+  margin: 0;
 }
 
 .html5 {
@@ -223,15 +224,22 @@
 }
 
 .about {
-  margin-top: -31px;
+  background-color: rgb(230, 245, 255);
+}
+
+.portfolio {
+  background-color: rgb(160, 225, 255);
 }
 
 .card {
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.24), 0 4px 8px rgba(0, 0, 0, 0.12);
+  padding: 4px;
+  background-color: rgb(240, 240, 240);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.48), 0 4px 8px rgba(0, 0, 0, 0.24);
+  z-index: 98;
 }
 
-.card:hover {
-  transform: scale(1.02);
+.contact {
+  background-color: rgb(230, 245, 255);
 }
 
 .gmail {
@@ -285,6 +293,7 @@
   font-size: 18px;
   font-weight: 500;
   color: rgb(255, 255, 255);
+  box-shadow: 0 -10px 20px rgba(0, 0, 0, 0.48), 0 -4px 8px rgba(0, 0, 0, 0.24);
 }
 
 html {
@@ -292,7 +301,7 @@ html {
 }
 
 section {
-  min-height: 420px;
+  min-height: 450px;
 }
 
 ion-icon {
@@ -318,10 +327,6 @@ ion-icon {
   text-shadow: 0 10px 20px rgba(0, 0, 0, 0.48), 0 4px 8px rgba(0, 0, 0, 0.24);
 }
 
-#profile:hover {
-  transform: scale(1.02);
-}
-
 #sectionTitle > h2 {
   display: flex;
   justify-content: center;
@@ -338,7 +343,6 @@ ion-icon {
   display: flex;
   align-items: center;
   width: max-content;
-  margin-bottom: 10px;
   font-weight: 600;
   text-decoration: none;
 }
@@ -366,7 +370,7 @@ ion-icon {
   height: 60px;
   width: 60px;
   border-radius: 100px;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.24), 0 4px 8px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.48), 0 4px 8px rgba(0, 0, 0, 0.24);
 }
 
 #myBtn:hover {
