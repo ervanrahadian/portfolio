@@ -36,6 +36,8 @@
   background-image: url("img/HomeGif.gif");
   background-size: cover;
   margin: 0;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 .html5 {
@@ -225,10 +227,14 @@
 
 .about {
   background-color: rgb(210, 240, 255);
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 .portfolio {
   background-color: rgb(160, 225, 255);
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 .card {
@@ -239,6 +245,8 @@
 
 .contact {
   background-color: rgb(210, 240, 255);
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 .gmail {
@@ -292,7 +300,7 @@
   font-size: 18px;
   font-weight: 500;
   color: rgb(255, 255, 255);
-  box-shadow: 0 -10px 20px rgba(0, 0, 0, 0.48), 0 -4px 8px rgba(0, 0, 0, 0.24);
+  /* box-shadow: 0 -10px 20px rgba(0, 0, 0, 0.48), 0 -4px 8px rgba(0, 0, 0, 0.24); */
 }
 
 html {
