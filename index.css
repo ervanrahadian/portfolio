@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 .navbar {
   background-color: rgb(20, 20, 140);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.48), 0 4px 8px rgba(0, 0, 0, 0.24);
@@ -19,17 +23,25 @@
   align-items: center;
   font-size: 24px;
   font-weight: 700;
+  font-family: "Poppins", sans-serif;
 }
 
 .navbar-nav {
   margin-left: auto;
 }
 
-.navbar-nav > a {
+#nav-link {
   display: flex;
   align-items: center;
   font-size: 18px;
   font-weight: 500;
+  font-family: "Poppins", sans-serif;
+  width: max-content;
+  color: rgb(255, 255, 255);
+}
+
+#nav-link:hover {
+  color: rgb(0, 180, 255);
 }
 
 .jumbotron {
@@ -40,7 +52,24 @@
   overflow-y: hidden;
 }
 
+.display-5 {
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+}
+
+#profile {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.48), 0 4px 8px rgba(0, 0, 0, 0.24);
+  margin-bottom: 10px;
+}
+
+#profileText {
+  color: rgb(255, 255, 255);
+  text-shadow: 0 10px 20px rgba(0, 0, 0, 0.48), 0 4px 8px rgba(0, 0, 0, 0.24);
+}
+
 .html5 {
+  font-size: 50px;
   color: rgb(240, 101, 41);
   position: relative;
   animation: html5 25s infinite;
@@ -71,6 +100,7 @@
 }
 
 .css3 {
+  font-size: 50px;
   color: rgb(41, 101, 241);
   position: relative;
   animation: css3 25s infinite;
@@ -101,6 +131,7 @@
 }
 
 .js {
+  font-size: 50px;
   color: rgb(240, 219, 79);
   position: relative;
   animation: js 25s infinite;
@@ -131,6 +162,7 @@
 }
 
 .react {
+  font-size: 50px;
   color: rgb(97, 219, 251);
   position: relative;
   animation: react 25s infinite;
@@ -161,6 +193,7 @@
 }
 
 .node {
+  font-size: 50px;
   color: rgb(60, 135, 58);
   position: relative;
   animation: node 25s infinite;
@@ -191,6 +224,7 @@
 }
 
 .npm {
+  font-size: 50px;
   color: rgb(204, 53, 52);
   position: relative;
   animation: npm 25s infinite;
@@ -220,15 +254,28 @@
   }
 }
 
-.display-5 {
-  margin-bottom: 10px;
-  font-weight: 700;
+section {
+  min-height: 450px;
+}
+
+#sectionTitle > h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 32px;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
 }
 
 .about {
   background-color: rgb(210, 240, 255);
   overflow-x: hidden;
   overflow-y: hidden;
+}
+
+#aboutText {
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
 }
 
 .portfolio {
@@ -241,12 +288,30 @@
   padding: 4px;
   background-color: rgb(240, 240, 240);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.48), 0 4px 8px rgba(0, 0, 0, 0.24);
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
 }
 
 .contact {
   background-color: rgb(210, 240, 255);
   overflow-x: hidden;
   overflow-y: hidden;
+}
+
+#contactColumn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#contactText {
+  display: flex;
+  align-items: center;
+  width: max-content;
+  font-size: 20px;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
 }
 
 .gmail {
@@ -299,59 +364,8 @@
   background-color: rgb(20, 20, 140);
   font-size: 18px;
   font-weight: 500;
+  font-family: "Poppins", sans-serif;
   color: rgb(255, 255, 255);
-  /* box-shadow: 0 -10px 20px rgba(0, 0, 0, 0.48), 0 -4px 8px rgba(0, 0, 0, 0.24); */
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-section {
-  min-height: 450px;
-}
-
-ion-icon {
-  font-size: 50px;
-}
-
-#nav-link {
-  width: max-content;
-  color: rgb(255, 255, 255);
-}
-
-#nav-link:hover {
-  color: rgb(0, 180, 255);
-}
-
-#profile {
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.48), 0 4px 8px rgba(0, 0, 0, 0.24);
-  margin-bottom: 10px;
-}
-
-#profileText {
-  color: rgb(255, 255, 255);
-  text-shadow: 0 10px 20px rgba(0, 0, 0, 0.48), 0 4px 8px rgba(0, 0, 0, 0.24);
-}
-
-#sectionTitle > h2 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-#contactColumn {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-#contactText {
-  display: flex;
-  align-items: center;
-  width: max-content;
-  font-weight: 600;
-  text-decoration: none;
 }
 
 #footerText {
