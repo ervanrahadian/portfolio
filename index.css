@@ -2,6 +2,10 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  background-color: rgb(210, 240, 255);
+}
+
 .navbar {
   background-color: rgb(20, 20, 140);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.48), 0 4px 8px rgba(0, 0, 0, 0.24);
@@ -44,12 +48,16 @@ html {
   color: rgb(0, 180, 255);
 }
 
+.home {
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
 .jumbotron {
   background-image: url("img/HomeGif.gif");
   background-size: cover;
   margin: 0;
-  overflow-x: hidden;
-  overflow-y: hidden;
+  padding: 80px 0 80px 0;
 }
 
 .display-5 {
@@ -254,10 +262,6 @@ html {
   }
 }
 
-section {
-  min-height: 450px;
-}
-
 #sectionTitle > h2 {
   display: flex;
   justify-content: center;
@@ -268,9 +272,15 @@ section {
 }
 
 .about {
+  min-height: 450px;
   background-color: rgb(210, 240, 255);
   overflow-x: hidden;
   overflow-y: hidden;
+  padding: 80px 0 80px 0;
+}
+
+.gradient {
+  transform: skewY(4deg);
 }
 
 #aboutText {
@@ -279,9 +289,12 @@ section {
 }
 
 .portfolio {
+  min-height: 450px;
+  transform: skewY(-4deg);
   background-color: rgb(160, 225, 255);
   overflow-x: hidden;
   overflow-y: hidden;
+  padding: 80px 0 80px 0;
 }
 
 .card {
@@ -293,9 +306,11 @@ section {
 }
 
 .contact {
+  min-height: 450px;
   background-color: rgb(210, 240, 255);
   overflow-x: hidden;
   overflow-y: hidden;
+  padding: 80px 0 80px 0;
 }
 
 #contactColumn {
