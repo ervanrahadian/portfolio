@@ -281,6 +281,9 @@ body {
 
 .gradient {
   transform: skewY(4deg);
+  -webkit-transform: skewY(4deg);
+  -moz-transform: skewY(4deg);
+  -o-transform: skewY(4deg);
 }
 
 #aboutText {
@@ -291,6 +294,9 @@ body {
 .portfolio {
   min-height: 450px;
   transform: skewY(-4deg);
+  -webkit-transform: skewY(-4deg);
+  -moz-transform: skewY(-4deg);
+  -o-transform: skewY(-4deg);
   background-color: rgb(160, 225, 255);
   overflow-x: hidden;
   overflow-y: hidden;
