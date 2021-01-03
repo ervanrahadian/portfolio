@@ -326,9 +326,46 @@ html {
   font-family: "Poppins", sans-serif;
 }
 
+.certification {
+  min-height: 450px;
+  transform: skewY(-4deg);
+  -webkit-transform: skewY(-4deg);
+  -moz-transform: skewY(-4deg);
+  -o-transform: skewY(-4deg);
+  background-color: rgb(210, 240, 255);
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.line {
+  border: 0.4px solid rgb(20, 20, 140);
+  margin: 40px auto 40px auto;
+}
+
+#certDefinition {
+  display: flex;
+  align-items: center;
+}
+
+#certPicture {
+  background-color: rgb(240, 240, 240);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.48), 0 4px 8px rgba(0, 0, 0, 0.24);
+}
+
+#certTitle {
+  font-size: 28px;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+}
+
+#certText {
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+}
+
 .contact {
   min-height: 450px;
-  background-color: rgb(210, 240, 255);
+  background-color: rgb(160, 225, 255);
   overflow-x: hidden;
   overflow-y: hidden;
 }
