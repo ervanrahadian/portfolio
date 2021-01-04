@@ -258,7 +258,7 @@ html {
   }
 }
 
-#sectionTitle > h2 {
+#section-title > h2 {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -295,7 +295,7 @@ html {
   -o-transform: skewY(-4deg);
 }
 
-#aboutText {
+#about-text {
   font-size: 16px;
   font-family: "Poppins", sans-serif;
 }
@@ -342,23 +342,23 @@ html {
   margin: 40px auto 40px auto;
 }
 
-#certDefinition {
+#cert-definition {
   display: flex;
   align-items: center;
 }
 
-#certPicture {
+#cert-picture {
   background-color: rgb(240, 240, 240);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.48), 0 4px 8px rgba(0, 0, 0, 0.24);
 }
 
-#certTitle {
+#cert-title {
   font-size: 28px;
   font-weight: 500;
   font-family: "Poppins", sans-serif;
 }
 
-#certText {
+#cert-text {
   font-size: 16px;
   font-family: "Poppins", sans-serif;
 }
@@ -387,13 +387,13 @@ html {
   -o-transform: skewY(-4deg);
 }
 
-#contactColumn {
+#contact-column {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-#contactText {
+#contact-text {
   display: flex;
   align-items: center;
   width: max-content;
@@ -457,12 +457,12 @@ html {
   color: rgb(255, 255, 255);
 }
 
-#footerText {
+#footer-text {
   text-decoration: none;
   color: rgb(255, 255, 255);
 }
 
-#footerText:hover {
+#footer-text:hover {
   color: rgb(0, 180, 255);
 }
 
