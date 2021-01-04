@@ -10,7 +10,7 @@ html {
 .navbar .navbar-toggler {
   padding: 0;
   border: none;
-  outline: none;
+  box-shadow: none;
 }
 
 .menu {
@@ -52,11 +52,10 @@ html {
 .jumbotron {
   background-image: url("img/HomeGif.gif");
   background-size: cover;
-  margin: 0;
   padding: 80px 0;
 }
 
-.display-5 {
+.display {
   margin-bottom: 10px;
   font-weight: 700;
   font-family: "Poppins", sans-serif;

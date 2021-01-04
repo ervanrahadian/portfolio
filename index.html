@@ -17,6 +17,14 @@
       src="https://unpkg.com/ionicons@5.2.3/dist/ionicons/ionicons.js"
     ></script>
 
+    <!-- Bootstrap 5 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    />
+
     <!-- Font -->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
@@ -26,9 +34,6 @@
 
     <!-- AOS -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
 
     <!-- ER CSS -->
     <link rel="stylesheet" href="index.css" />
@@ -49,15 +54,15 @@
             class="navbar-toggler"
             type="button"
             title="Expand"
-            data-toggle="collapse"
-            data-target="#navbarNavAltMarkup"
-            aria-controls="navbarNavAltMarkup"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
             <ion-icon class="menu" name="menu-outline"></ion-icon>
           </button>
-          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <div class="navbar-nav">
               <a id="nav-link" class="nav-link" href="/">
                 <ion-icon size="small" name="home-outline"></ion-icon>&nbsp;Home
@@ -85,12 +90,12 @@
     </header>
 
     <section id="home" class="home">
-      <div class="jumbotron jumbotron-fluid">
+      <div class="jumbotron">
         <div class="container text-center">
           <img
             id="profile"
             src="img/ERColorful.webp"
-            width="25%"
+            width="24%"
             alt="Ervan Rahadian"
             title="Ervan Rahadian"
             class="rounded-circle img-thumbnail"
@@ -100,7 +105,7 @@
           />
           <h1
             id="profile-text"
-            class="display-5"
+            class="display"
             data-aos="fade-up"
             data-aos-duration="2000"
             data-aos-delay="600"
@@ -109,7 +114,7 @@
           </h1>
           <h4
             id="profile-text"
-            class="display-5"
+            class="display"
             data-aos="fade-up"
             data-aos-duration="2000"
             data-aos-delay="1000"
@@ -118,7 +123,7 @@
           </h4>
           <h4
             id="profile-text"
-            class="display-5"
+            class="display"
             data-aos="fade-up"
             data-aos-duration="2000"
             data-aos-delay="1600"
@@ -126,7 +131,7 @@
             DEVELOPER && DESIGNER
           </h4>
           <p
-            class="lead"
+            class="roll"
             data-aos="fade-up"
             data-aos-duration="2000"
             data-aos-delay="2000"
@@ -298,7 +303,7 @@
               <div class="card-body">
                 <p class="card-text">
                   About application development, I usually use Adobe XD for
-                  design and prototyping tools.
+                  prototyping tools and interface design.
                 </p>
               </div>
             </div>
@@ -337,8 +342,8 @@
               <img src="img/PDrawing.webp" class="card-img-top" alt="Drawing" />
               <div class="card-body">
                 <p class="card-text">
-                  In my free time, I do perspective drawing, image editing,
-                  writing, playing music and game.
+                  In my free time, I do drawing, image editing, writing, playing
+                  music and game.
                 </p>
               </div>
             </div>
@@ -597,27 +602,17 @@
       }
     </script>
 
+    <!-- Bootstrap 5 -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+      crossorigin="anonymous"
+    ></script>
+
     <!-- AOS -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();
     </script>
-
-    <!-- Optional JavaScript -->
-    <script
-      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
-      crossorigin="anonymous"
-    ></script>
   </body>
 </html>
