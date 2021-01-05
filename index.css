@@ -52,11 +52,11 @@ html {
 .jumbotron {
   background-image: url("img/HomeGif.gif");
   background-size: cover;
-  padding: 80px 0;
+  padding: 60px 0;
 }
 
 .display {
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   font-weight: 700;
   font-family: "Poppins", sans-serif;
 }
@@ -66,7 +66,14 @@ html {
   margin-bottom: 10px;
 }
 
-#profile-text {
+#first-text {
+  font-size: 38px;
+  color: rgb(255, 255, 255);
+  text-shadow: 0 10px 20px rgba(0, 0, 0, 0.48), 0 4px 8px rgba(0, 0, 0, 0.24);
+}
+
+#second-text {
+  font-size: 24px;
   color: rgb(255, 255, 255);
   text-shadow: 0 10px 20px rgba(0, 0, 0, 0.48), 0 4px 8px rgba(0, 0, 0, 0.24);
 }
