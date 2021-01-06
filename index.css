@@ -47,11 +47,30 @@ html {
 .home {
   overflow-x: hidden;
   overflow-y: hidden;
+  background: linear-gradient(
+    45deg,
+    rgb(60, 80, 255),
+    rgb(135, 70, 255),
+    rgb(50, 200, 255),
+    rgb(30, 160, 255)
+  );
+  background-size: 400% 400%;
+  animation: home-gradient 8s ease infinite;
+}
+
+@keyframes home-gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 .jumbotron {
-  background-image: url("img/HomeGif.gif");
-  background-size: cover;
   padding: 60px 0;
 }
 
