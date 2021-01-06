@@ -19,8 +19,10 @@
 
     <!-- Bootstrap 5 -->
     <link
+      rel="preload"
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
+      as="style"
+      onload="this.onload = null; this.rel = 'stylesheet'"
       integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
       crossorigin="anonymous"
     />
@@ -28,15 +30,22 @@
     <!-- Font -->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
+      rel="preload"
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
-      rel="stylesheet"
+      as="style"
+      onload="this.onload = null; this.rel = 'stylesheet'"
     />
 
     <!-- AOS -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <!-- ER CSS -->
-    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="preload"
+      href="index.css"
+      as="style"
+      onload="this.onload = null; this.rel = 'stylesheet'"
+    />
 
     <!-- ER Logo -->
     <link rel="icon" href="img/ERLogo.webp" />
