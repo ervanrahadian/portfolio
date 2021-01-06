@@ -55,10 +55,10 @@ html {
     rgb(30, 160, 255)
   );
   background-size: 400% 400%;
-  animation: home-gradient 8s ease infinite;
+  animation: home-animation 8s ease infinite;
 }
 
-@keyframes home-gradient {
+@keyframes home-animation {
   0% {
     background-position: 0% 50%;
   }
