@@ -30,7 +30,11 @@ html {
   margin-left: auto;
 }
 
-#nav-link {
+#nav-link-home,
+#nav-link-about,
+#nav-link-portfolio,
+#nav-link-certification,
+#nav-link-contact {
   display: flex;
   align-items: center;
   font-size: 18px;
@@ -40,7 +44,11 @@ html {
   color: rgb(255, 255, 255);
 }
 
-#nav-link:hover {
+#nav-link-home:hover,
+#nav-link-about:hover,
+#nav-link-portfolio:hover,
+#nav-link-certification:hover,
+#nav-link-contact:hover {
   color: rgb(0, 180, 255);
 }
 
@@ -418,7 +426,7 @@ html {
   align-items: center;
 }
 
-#contact-text {
+.contact-text {
   display: flex;
   align-items: center;
   width: max-content;

@@ -12,6 +12,16 @@
       content="My personal website, created by Ervan Rahadian Hakim with Love for everyone."
     />
 
+    <!-- PWA -->
+    <link rel="manifest" href="manifest.json" />
+    <meta name="theme-color" content="rgb(20, 20, 140)" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="Ervan Rahadian" />
+    <link rel="apple-touch-icon" href="img/ERLogo144.png" />
+    <meta name="msapplication-TileImage" content="img/ERLogo144.png" />
+    <meta name="msapplication-TileColor" content="rgb(0, 0, 0)" />
+
     <!-- Ionicons -->
     <script
       type="module"
@@ -53,7 +63,7 @@
     />
 
     <!-- ER Logo -->
-    <link rel="icon" href="img/ERLogo.webp" />
+    <link rel="icon" href="img/ERLogo144.png" />
 
     <!-- ER Title -->
     <title>Ervan Rahadian</title>
@@ -78,22 +88,26 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <div class="navbar-nav">
-              <a id="nav-link" class="nav-link" href="/">
+              <a id="nav-link-home" class="nav-link" href="/">
                 <ion-icon size="small" name="home-outline"></ion-icon>&nbsp;Home
               </a>
-              <a id="nav-link" class="nav-link" href="#about">
+              <a id="nav-link-about" class="nav-link" href="#about">
                 <ion-icon size="small" name="person-outline"></ion-icon
                 >&nbsp;About
               </a>
-              <a id="nav-link" class="nav-link" href="#portfolio">
+              <a id="nav-link-portfolio" class="nav-link" href="#portfolio">
                 <ion-icon size="small" name="document-text-outline"></ion-icon
                 >&nbsp;Portfolio
               </a>
-              <a id="nav-link" class="nav-link" href="#certification">
+              <a
+                id="nav-link-certification"
+                class="nav-link"
+                href="#certification"
+              >
                 <ion-icon size="small" name="school-outline"></ion-icon
                 >&nbsp;Certification
               </a>
-              <a id="nav-link" class="nav-link" href="#contact">
+              <a id="nav-link-contact" class="nav-link" href="#contact">
                 <ion-icon size="small" name="chatbubbles-outline"></ion-icon
                 >&nbsp;Contact
               </a>
@@ -505,70 +519,70 @@
 
         <div class="row">
           <div id="contact-column" class="col-md text-center">
-            <h5 class="pb-4">
+            <h3 class="pb-4">
               <a
-                id="contact-text"
+                id="gmail-logo"
                 href="mailto:ervanrahadian@gmail.com"
                 target="blank"
-                class="gmail"
+                class="gmail contact-text"
                 data-aos="fade-right"
                 data-aos-duration="2000"
               >
                 <ion-icon size="large" name="logo-google"></ion-icon>&nbsp;Gmail
               </a>
-            </h5>
-            <h5 class="pb-4">
+            </h3>
+            <h3 class="pb-4">
               <a
-                id="contact-text"
+                id="whatsapp-logo"
                 href="https://wa.wizard.id/9df1d8"
                 target="blank"
-                class="whatsapp"
+                class="whatsapp contact-text"
                 data-aos="fade-left"
                 data-aos-duration="2000"
               >
                 <ion-icon size="large" name="logo-whatsapp"></ion-icon
                 >&nbsp;WhatsApp
               </a>
-            </h5>
-            <h5 class="pb-4">
+            </h3>
+            <h3 class="pb-4">
               <a
-                id="contact-text"
+                id="linkedin-logo"
                 href="https://www.linkedin.com/in/ervan-rahadian-hakim-23011a1b5/"
                 target="blank"
-                class="linkedin"
+                class="linkedin contact-text"
                 data-aos="fade-right"
                 data-aos-duration="2000"
               >
                 <ion-icon size="large" name="logo-linkedin"></ion-icon
                 >&nbsp;LinkedIn
               </a>
-            </h5>
-            <h5 class="pb-4">
+            </h3>
+            <h3 class="pb-4">
               <a
-                id="contact-text"
+                id="github-logo"
                 href="https://github.com/ervanrahadian"
                 target="blank"
-                class="github"
+                class="github contact-text"
                 data-aos="fade-left"
                 data-aos-duration="2000"
               >
                 <ion-icon size="large" name="logo-github"></ion-icon
                 >&nbsp;GitHub
               </a>
-            </h5>
-            <h5>
+            </h3>
+            <h3>
               <a
-                id="contact-text"
+                id="youtube-logo"
                 href="https://www.youtube.com/channel/UCpErBQ6lJDJxepx6Trlph9g"
                 target="blank"
-                class="youtube"
+                class="youtube contact-text"
                 data-aos="fade-right"
                 data-aos-duration="2000"
               >
                 <ion-icon size="large" name="logo-youtube"></ion-icon
                 >&nbsp;YouTube
               </a>
-            </h5>
+            </h3>
           </div>
         </div>
       </div>
@@ -579,7 +593,7 @@
         <div class="row pt-3">
           <div class="col text-center">
             <p>
-              Copyright &copy; 2020 -
+              Copyright &copy; 2021 -
               <a id="footer-text" href="/">Ervan Rahadian</a>
             </p>
           </div>
@@ -627,6 +641,15 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();
+    </script>
+
+    <!-- PWA -->
+    <script>
+      if ("serviceWorker" in navigator) {
+        window.addEventListener("load", () => {
+          navigator.serviceWorker.register("/sw.js");
+        });
+      }
     </script>
   </body>
 </html>

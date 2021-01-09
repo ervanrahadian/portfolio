@@ -1,0 +1,26 @@
+{
+  "name": "Ervan Rahadian",
+  "short_name": "ER",
+  "description": "My personal website, created by Ervan Rahadian Hakim with Love for everyone.",
+  "lang": "en-US",
+  "dir": "ltr",
+  "theme_color": "rgb(20, 20, 140)",
+  "start_url": ".",
+  "background_color": "rgb(0, 0, 0)",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "img/ERLogo72.png",
+      "sizes": "72x72",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "img/ERLogo512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
