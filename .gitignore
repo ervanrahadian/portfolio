@@ -10,7 +10,7 @@ firebase-debug.*.log*
 # Firebase cache
 .firebase/
 
-# My img
+# My image
 img/
 
 # Firebase config
