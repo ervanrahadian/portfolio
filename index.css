@@ -63,9 +63,10 @@ html {
     rgb(60, 80, 255),
     rgb(135, 70, 255),
     rgb(50, 200, 255),
-    rgb(30, 160, 255)
+    rgb(0, 180, 255),
+    rgb(0, 120, 200)
   );
-  background-size: 400% 400%;
+  background-size: 500% 500%;
   animation: home-animation 8s ease infinite;
 }
 
