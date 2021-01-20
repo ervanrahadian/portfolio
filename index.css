@@ -1,7 +1,9 @@
+/* Body */
 html {
   scroll-behavior: smooth;
 }
 
+/* Header */
 .navbar {
   background-color: rgb(20, 20, 140);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.48), 0 4px 8px rgba(0, 0, 0, 0.24);
@@ -52,6 +54,7 @@ html {
   color: rgb(0, 180, 255);
 }
 
+/* Home */
 .home {
   overflow-x: hidden;
   overflow-y: hidden;
@@ -291,6 +294,7 @@ html {
   }
 }
 
+/* Section */
 #section-title > h2 {
   display: flex;
   justify-content: center;
@@ -304,6 +308,7 @@ html {
   padding: 80px 15px;
 }
 
+/* About */
 .about {
   min-height: 450px;
   background-color: rgb(210, 240, 255);
@@ -333,6 +338,7 @@ html {
   font-family: "Poppins", sans-serif;
 }
 
+/* Portfolio */
 .portfolio {
   min-height: 450px;
   transform: skewY(-4deg);
@@ -355,10 +361,20 @@ html {
   padding: 4px;
   background-color: rgb(240, 240, 240);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.48), 0 4px 8px rgba(0, 0, 0, 0.24);
+}
+
+.card-title {
+  font-size: 17px;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+}
+
+.card-text {
   font-size: 16px;
   font-family: "Poppins", sans-serif;
 }
 
+/* Certification */
 .certification {
   min-height: 450px;
   transform: skewY(-4deg);
@@ -396,6 +412,7 @@ html {
   font-family: "Poppins", sans-serif;
 }
 
+/* Contact */
 .contact {
   min-height: 450px;
   background-color: rgb(160, 225, 255);
@@ -481,6 +498,7 @@ html {
   color: rgb(225, 0, 0);
 }
 
+/* Footer */
 .footer {
   height: 62px;
   background-color: rgb(20, 20, 140);
@@ -499,6 +517,7 @@ html {
   color: rgb(0, 180, 255);
 }
 
+/* Top */
 #my-btn {
   display: none;
   position: fixed;
