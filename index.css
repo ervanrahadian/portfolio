@@ -44,6 +44,7 @@ html {
   font-family: "Poppins", sans-serif;
   width: max-content;
   color: rgb(255, 255, 255);
+  transition: margin 0.6s linear;
 }
 
 #nav-link-home:hover,
@@ -52,10 +53,14 @@ html {
 #nav-link-certification:hover,
 #nav-link-contact:hover {
   color: rgb(0, 180, 255);
+  border-left: 2px solid rgb(0, 180, 255);
+  margin-left: 10px;
+  padding-left: 5px;
 }
 
 /* Home */
 .home {
+  margin-top: 62px;
   overflow-x: hidden;
   overflow-y: hidden;
   background: linear-gradient(
@@ -83,7 +88,7 @@ html {
 }
 
 .jumbotron {
-  padding: 60px 0;
+  padding: 70px 0;
 }
 
 .display {
@@ -306,7 +311,7 @@ html {
 }
 
 .space {
-  padding: 80px 15px;
+  padding: 90px 15px;
 }
 
 /* About */
