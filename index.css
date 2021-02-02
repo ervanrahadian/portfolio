@@ -60,35 +60,31 @@ html {
 
 /* Home */
 .home {
-  margin-top: 62px;
   overflow-x: hidden;
   overflow-y: hidden;
   background: linear-gradient(
     45deg,
-    rgb(60, 80, 255),
-    rgb(135, 70, 255),
-    rgb(50, 200, 255),
+    rgb(150, 50, 255),
+    rgb(150, 50, 255),
     rgb(0, 180, 255),
-    rgb(0, 120, 200)
+    rgb(0, 180, 255)
   );
-  background-size: 500% 500%;
-  animation: home-animation 8s ease infinite;
+  background-size: 600% 100%;
+  animation: home-animation 5s linear infinite;
+  animation-direction: alternate;
 }
 
 @keyframes home-animation {
   0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
+    background-position: 0%;
   }
   100% {
-    background-position: 0% 50%;
+    background-position: 100%;
   }
 }
 
 .jumbotron {
-  padding: 70px 0;
+  padding: 132px 0 70px 0;
 }
 
 .display {
