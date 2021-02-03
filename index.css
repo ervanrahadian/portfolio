@@ -64,13 +64,13 @@ html {
   overflow-y: hidden;
   background: linear-gradient(
     45deg,
-    rgb(150, 50, 255),
+    rgb(60, 30, 255),
     rgb(150, 50, 255),
     rgb(0, 180, 255),
-    rgb(0, 180, 255)
+    rgb(0, 60, 255)
   );
   background-size: 600% 100%;
-  animation: home-animation 5s linear infinite;
+  animation: home-animation 8s linear infinite;
   animation-direction: alternate;
 }
 
