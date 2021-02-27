@@ -96,6 +96,8 @@ html {
 #profile {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.48), 0 4px 8px rgba(0, 0, 0, 0.24);
   margin-bottom: 10px;
+  width: 25%;
+  height: auto;
 }
 
 #first-text {
@@ -376,6 +378,11 @@ html {
   font-family: "Poppins", sans-serif;
 }
 
+#portfolio-picture {
+  width: 100%;
+  height: auto;
+}
+
 /* Certification */
 .certification {
   min-height: 450px;
@@ -402,8 +409,9 @@ html {
 #cert-picture {
   display: flex;
   align-items: center;
-  justify-content: center;
   margin: auto;
+  width: auto;
+  height: 100%;
   background-color: rgb(240, 240, 240);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.48), 0 4px 8px rgba(0, 0, 0, 0.24);
 }
