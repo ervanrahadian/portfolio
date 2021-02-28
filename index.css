@@ -84,7 +84,7 @@ html {
 }
 
 .jumbotron {
-  padding: 132px 0 70px 0;
+  padding: 139px 0 77px 0;
 }
 
 .display {
@@ -95,7 +95,11 @@ html {
 
 #profile {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.48), 0 4px 8px rgba(0, 0, 0, 0.24);
-  margin-bottom: 10px;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
 }
 
 #first-text {
@@ -376,6 +380,11 @@ html {
   font-family: "Poppins", sans-serif;
 }
 
+#port-picture {
+  width: 404px;
+  height: 227.25px;
+}
+
 /* Certification */
 .certification {
   min-height: 450px;
@@ -403,6 +412,18 @@ html {
   display: flex;
   align-items: center;
   margin: auto;
+  width: 633px;
+  height: 360.44px;
+  background-color: rgb(240, 240, 240);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.48), 0 4px 8px rgba(0, 0, 0, 0.24);
+}
+
+#cert-picture2 {
+  display: flex;
+  align-items: center;
+  margin: auto;
+  width: 550px;
+  height: 415px;
   background-color: rgb(240, 240, 240);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.48), 0 4px 8px rgba(0, 0, 0, 0.24);
 }
@@ -523,7 +544,30 @@ html {
   color: rgb(0, 180, 255);
 }
 
-/* Top */
+/* RWD */
+@media (max-width: 1400px) {
+  #profile {
+    width: 25%;
+    height: auto;
+  }
+
+  #port-picture {
+    width: 100%;
+    height: auto;
+  }
+
+  #cert-picture {
+    width: 100%;
+    height: auto;
+  }
+
+  #cert-picture2 {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* Button Top */
 #my-btn {
   display: none;
   position: fixed;
