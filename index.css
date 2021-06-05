@@ -84,7 +84,12 @@ html {
 }
 
 .jumbotron {
-  padding: 139px 0 77px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 62px;
+  height: 100vh;
 }
 
 .display {
