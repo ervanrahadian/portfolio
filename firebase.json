@@ -1,6 +1,26 @@
 {
   "hosting": {
     "public": "/",
+    "headers": [
+      {
+        "source": "**/*.@(js|css)",
+        "headers": [
+          {
+            "key": "Cache-Control",
+            "value": "max-age=604800"
+          }
+        ]
+      },
+      {
+        "source": "**/*.@(webp)",
+        "headers": [
+          {
+            "key": "Cache-Control",
+            "value": "max-age=604800"
+          }
+        ]
+      }
+    ],
     "site": "ervanrahadian",
     "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
     "rewrites": [
