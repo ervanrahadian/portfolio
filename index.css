@@ -3,6 +3,10 @@ html {
   scroll-behavior: smooth;
 }
 
+img {
+  content-visibility: auto;
+}
+
 /* Header */
 .navbar {
   background-color: rgb(20, 20, 140);
