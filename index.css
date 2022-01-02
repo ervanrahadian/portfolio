@@ -1,6 +1,7 @@
 /* Body */
-html {
+body {
   scroll-behavior: smooth;
+  font-family: "Poppins", sans-serif;
 }
 
 /* Header */
@@ -25,7 +26,6 @@ html {
   align-items: center;
   font-size: 24px;
   font-weight: 700;
-  font-family: "Poppins", sans-serif;
 }
 
 .navbar-nav {
@@ -41,10 +41,11 @@ html {
   align-items: center;
   font-size: 18px;
   font-weight: 500;
-  font-family: "Poppins", sans-serif;
   width: max-content;
+  margin-left: 10px;
+  padding-left: 5px;
   color: rgb(255, 255, 255);
-  transition: margin 0.6s linear;
+  border-left: 2px solid transparent;
 }
 
 #nav-link-home:hover,
@@ -54,8 +55,6 @@ html {
 #nav-link-contact:hover {
   color: rgb(0, 180, 255);
   border-left: 2px solid rgb(0, 180, 255);
-  margin-left: 10px;
-  padding-left: 5px;
 }
 
 /* Home */
@@ -95,7 +94,6 @@ html {
 .display {
   margin-bottom: 5px;
   font-weight: 700;
-  font-family: "Poppins", sans-serif;
 }
 
 #profile {
@@ -119,8 +117,14 @@ html {
   text-shadow: 0 10px 20px rgba(0, 0, 0, 0.48), 0 4px 8px rgba(0, 0, 0, 0.24);
 }
 
+.roll {
+  display: flex;
+  justify-content: center;
+}
+
 .html5 {
-  font-size: 50px;
+  width: 50px;
+  height: 50px;
   color: rgb(240, 101, 41);
   position: relative;
   animation: html5 25s infinite;
@@ -131,19 +135,19 @@ html {
     left: 0px;
   }
   16.667% {
-    left: 222px;
+    left: 200px;
   }
   33.333% {
-    left: 166px;
+    left: 150px;
   }
   50% {
-    left: 278px;
+    left: 250px;
   }
   66.667% {
-    left: 55px;
+    left: 50px;
   }
   83.333% {
-    left: 111px;
+    left: 100px;
   }
   100% {
     left: 0px;
@@ -151,7 +155,8 @@ html {
 }
 
 .css3 {
-  font-size: 50px;
+  width: 50px;
+  height: 50px;
   color: rgb(41, 101, 241);
   position: relative;
   animation: css3 25s infinite;
@@ -162,19 +167,19 @@ html {
     left: 0px;
   }
   16.667% {
-    left: 55px;
+    left: 50px;
   }
   33.333% {
-    left: -55px;
+    left: -50px;
   }
   50% {
-    left: 166px;
+    left: 150px;
   }
   66.667% {
-    left: 111px;
+    left: 100px;
   }
   83.333% {
-    left: 222px;
+    left: 200px;
   }
   100% {
     left: 0px;
@@ -182,7 +187,8 @@ html {
 }
 
 .js {
-  font-size: 50px;
+  width: 50px;
+  height: 50px;
   color: rgb(240, 219, 79);
   position: relative;
   animation: js 25s infinite;
@@ -193,19 +199,19 @@ html {
     left: 0px;
   }
   16.667% {
-    left: -111px;
+    left: -100px;
   }
   33.333% {
-    left: 111px;
+    left: 100px;
   }
   50% {
-    left: 55px;
+    left: 50px;
   }
   66.667% {
-    left: 166px;
+    left: 150px;
   }
   83.333% {
-    left: -55px;
+    left: -50px;
   }
   100% {
     left: 0px;
@@ -213,7 +219,8 @@ html {
 }
 
 .react {
-  font-size: 50px;
+  width: 50px;
+  height: 50px;
   color: rgb(97, 219, 251);
   position: relative;
   animation: react 25s infinite;
@@ -224,19 +231,19 @@ html {
     left: 0px;
   }
   16.667% {
-    left: 111px;
+    left: 100px;
   }
   33.333% {
-    left: -111px;
+    left: -100px;
   }
   50% {
-    left: -55px;
+    left: -50px;
   }
   66.667% {
-    left: -166px;
+    left: -150px;
   }
   83.333% {
-    left: 55px;
+    left: 50px;
   }
   100% {
     left: 0px;
@@ -244,7 +251,8 @@ html {
 }
 
 .node {
-  font-size: 50px;
+  width: 50px;
+  height: 50px;
   color: rgb(60, 135, 58);
   position: relative;
   animation: node 25s infinite;
@@ -255,50 +263,51 @@ html {
     left: 0px;
   }
   16.667% {
-    left: -55px;
+    left: -50px;
   }
   33.333% {
-    left: 55px;
+    left: 50px;
   }
   50% {
-    left: -166px;
+    left: -150px;
   }
   66.667% {
-    left: -111px;
+    left: -100px;
   }
   83.333% {
-    left: -222px;
+    left: -200px;
   }
   100% {
     left: 0px;
   }
 }
 
-.npm {
-  font-size: 50px;
-  color: rgb(204, 53, 52);
+.firebase {
+  width: 50px;
+  height: 50px;
+  color: rgb(255, 166, 0);
   position: relative;
-  animation: npm 25s infinite;
+  animation: firebase 25s infinite;
 }
 
-@keyframes npm {
+@keyframes firebase {
   0% {
     left: 0px;
   }
   16.667% {
-    left: -222px;
+    left: -200px;
   }
   33.333% {
-    left: -166px;
+    left: -150px;
   }
   50% {
-    left: -278px;
+    left: -250px;
   }
   66.667% {
-    left: -55px;
+    left: -50px;
   }
   83.333% {
-    left: -111px;
+    left: -100px;
   }
   100% {
     left: 0px;
@@ -312,7 +321,6 @@ html {
   align-items: center;
   font-size: 32px;
   font-weight: 500;
-  font-family: "Poppins", sans-serif;
 }
 
 .space {
@@ -346,7 +354,6 @@ html {
 
 #about-text {
   font-size: 16px;
-  font-family: "Poppins", sans-serif;
 }
 
 /* Portfolio */
@@ -377,12 +384,10 @@ html {
 .card-title {
   font-size: 17px;
   font-weight: 500;
-  font-family: "Poppins", sans-serif;
 }
 
 .card-text {
   font-size: 16px;
-  font-family: "Poppins", sans-serif;
 }
 
 /* Certification */
@@ -420,12 +425,10 @@ html {
 #cert-title {
   font-size: 28px;
   font-weight: 500;
-  font-family: "Poppins", sans-serif;
 }
 
 #cert-text {
   font-size: 16px;
-  font-family: "Poppins", sans-serif;
 }
 
 /* Contact */
@@ -465,7 +468,6 @@ html {
   width: max-content;
   font-size: 20px;
   font-weight: 600;
-  font-family: "Poppins", sans-serif;
   text-decoration: none;
 }
 
@@ -520,7 +522,6 @@ html {
   background-color: rgb(20, 20, 140);
   font-size: 18px;
   font-weight: 500;
-  font-family: "Poppins", sans-serif;
   color: rgb(255, 255, 255);
 }
 
