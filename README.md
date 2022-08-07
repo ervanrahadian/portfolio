@@ -7,7 +7,7 @@ Hosting URL: [Ervan Rahadian](http://ervanrahadian.web.app/).
 - HTML5
 - CSS3
 - Ionicons v5.5.2
-- Bootstrap v5.1.3
+- Bootstrap v5.2.0
 - AOS (Animate on scroll) v3.0.0
 - jQuery v3.6.0
 
