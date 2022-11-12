@@ -18,7 +18,7 @@ body {
   box-shadow: none;
 }
 
-.menu {
+#menu-icon {
   color: rgb(255, 255, 255);
   font-size: 40px;
 }
@@ -60,14 +60,14 @@ body {
 }
 
 /* Home */
-.home {
+#home {
   overflow-x: hidden;
   overflow-y: hidden;
   background: linear-gradient(
     45deg,
     rgb(60, 50, 255),
     rgb(150, 50, 255),
-    rgb(0, 180, 255),
+    rgb(0, 160, 255),
     rgb(0, 60, 255)
   );
   background-size: 600% 100%;
@@ -84,7 +84,7 @@ body {
   }
 }
 
-.jumbotron {
+#jumbotron {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -93,39 +93,37 @@ body {
   height: 100vh;
 }
 
-.display {
-  margin-bottom: 10px;
-  font-weight: 700;
-}
-
-#profile {
+#profile-picture {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.48), 0 4px 8px rgba(0, 0, 0, 0.24);
   margin-bottom: 20px;
   border-radius: 20px;
   background-color: transparent;
-  width: 300px;
-  height: 300px;
 }
 
-#first-text {
+.profile-display {
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+#profile-first-text {
   font-size: 38px;
   color: rgb(255, 255, 255);
   text-shadow: 0 10px 20px rgba(0, 0, 0, 0.48), 0 4px 8px rgba(0, 0, 0, 0.24);
 }
 
-#second-text {
+#profile-second-text {
   font-size: 24px;
   color: rgb(255, 255, 255);
   text-shadow: 0 10px 20px rgba(0, 0, 0, 0.48), 0 4px 8px rgba(0, 0, 0, 0.24);
 }
 
-.roll {
+#profile-roll {
   display: flex;
   justify-content: center;
   margin-top: 20px;
 }
 
-.html5 {
+#html5-icon {
   width: 50px;
   height: 50px;
   color: rgb(240, 101, 41);
@@ -157,7 +155,7 @@ body {
   }
 }
 
-.css3 {
+#css3-icon {
   width: 50px;
   height: 50px;
   color: rgb(41, 101, 241);
@@ -189,7 +187,7 @@ body {
   }
 }
 
-.js {
+#js-icon {
   width: 50px;
   height: 50px;
   color: rgb(240, 219, 79);
@@ -221,7 +219,7 @@ body {
   }
 }
 
-.react {
+#react-icon {
   width: 50px;
   height: 50px;
   color: rgb(97, 219, 251);
@@ -253,7 +251,7 @@ body {
   }
 }
 
-.node {
+#node-icon {
   width: 50px;
   height: 50px;
   color: rgb(60, 135, 58);
@@ -285,7 +283,7 @@ body {
   }
 }
 
-.firebase {
+#firebase-icon {
   width: 50px;
   height: 50px;
   color: rgb(255, 166, 0);
@@ -318,7 +316,7 @@ body {
 }
 
 /* Section */
-#section-title > h2 {
+.section-title > h2 {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -326,28 +324,32 @@ body {
   font-weight: 500;
 }
 
+.gradient {
+  transform: skewY(4deg);
+  -webkit-transform: skewY(4deg);
+  -moz-transform: skewY(4deg);
+  -o-transform: skewY(4deg);
+}
+
 .space {
   padding: 100px 15px;
 }
 
 /* About */
-.about {
+#about {
   min-height: 450px;
   background-color: rgb(210, 240, 255);
   overflow-x: hidden;
   overflow-y: hidden;
 }
 
-.about::after {
+#about::after {
   content: "";
   width: 100%;
   height: 450px;
   position: absolute;
   background: inherit;
   z-index: -1;
-}
-
-#about::after {
   transform-origin: left bottom;
   transform: skewY(-4deg);
   -webkit-transform: skewY(-4deg);
@@ -355,12 +357,12 @@ body {
   -o-transform: skewY(-4deg);
 }
 
-#about-text {
+.about-text {
   font-size: 16px;
 }
 
 /* Portfolio */
-.portfolio {
+#portfolio {
   min-height: 450px;
   transform: skewY(-4deg);
   -webkit-transform: skewY(-4deg);
@@ -371,15 +373,7 @@ body {
   overflow-y: hidden;
 }
 
-.gradient {
-  transform: skewY(4deg);
-  -webkit-transform: skewY(4deg);
-  -moz-transform: skewY(4deg);
-  -o-transform: skewY(4deg);
-}
-
 .card {
-  padding: 4px;
   background-color: rgb(240, 240, 240);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.48), 0 4px 8px rgba(0, 0, 0, 0.24);
 }
@@ -394,7 +388,7 @@ body {
 }
 
 /* Certification */
-.certification {
+#certification {
   min-height: 450px;
   transform: skewY(-4deg);
   -webkit-transform: skewY(-4deg);
@@ -405,19 +399,14 @@ body {
   overflow-y: hidden;
 }
 
-.line {
-  border: 0.4px solid rgb(20, 20, 140);
-  margin: 40px auto 40px auto;
-}
-
-#cert-definition {
+.cert-definition {
   display: flex;
   align-items: center;
   margin: auto;
 }
 
-#cert-picture,
-#cert-picture2 {
+.cert-picture,
+.cert-picture2 {
   display: flex;
   align-items: center;
   margin: auto;
@@ -425,33 +414,38 @@ body {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.48), 0 4px 8px rgba(0, 0, 0, 0.24);
 }
 
-#cert-title {
+.cert-title {
   font-size: 28px;
   font-weight: 500;
 }
 
-#cert-text {
+.cert-text {
   font-size: 16px;
 }
 
 /* Contact */
-.contact {
+#contact {
   min-height: 450px;
   background-color: rgb(160, 225, 255);
   overflow-x: hidden;
   overflow-y: hidden;
 }
 
-.contact::before {
+#contact::before {
   content: "";
   width: 100%;
   height: 450px;
   position: absolute;
   background: inherit;
   z-index: -1;
+  transform-origin: left top;
+  transform: skewY(-4deg);
+  -webkit-transform: skewY(-4deg);
+  -moz-transform: skewY(-4deg);
+  -o-transform: skewY(-4deg);
 }
 
-.contact::after {
+#contact::after {
   content: "";
   width: 100%;
   height: 62px;
@@ -460,76 +454,45 @@ body {
   z-index: -1;
 }
 
-#contact::before {
-  transform-origin: left top;
-  transform: skewY(-4deg);
-  -webkit-transform: skewY(-4deg);
-  -moz-transform: skewY(-4deg);
-  -o-transform: skewY(-4deg);
-}
-
-#contact-column {
+.contact-card {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.48), 0 4px 8px rgba(0, 0, 0, 0.24);
+  min-height: 240px;
+  font-size: 64px;
 }
 
-.contact-text {
-  display: flex;
-  align-items: center;
-  width: max-content;
-  font-size: 20px;
-  font-weight: 600;
-  text-decoration: none;
+#github-card {
+  background-color: rgb(31, 31, 31);
+  color: rgb(255, 255, 255);
 }
 
-.gmail {
-  color: rgb(66, 133, 244);
+#linkedin-card {
+  background-color: rgb(0, 97, 146);
+  color: rgb(255, 255, 255);
 }
 
-.gmail:hover {
-  transform: scale(1.04);
-  color: rgb(36, 103, 214);
+#whatsapp-card {
+  background-color: rgb(74, 201, 89);
+  color: rgb(255, 255, 255);
 }
 
-.whatsapp {
-  color: rgb(74, 201, 89);
+#google-card {
+  background-color: rgb(66, 133, 244);
+  color: rgb(255, 255, 255);
 }
 
-.whatsapp:hover {
-  transform: scale(1.04);
-  color: rgb(44, 181, 59);
-}
-
-.linkedin {
-  color: rgb(0, 97, 146);
-}
-
-.linkedin:hover {
-  transform: scale(1.04);
-  color: rgb(0, 67, 116);
-}
-
-.github {
-  color: rgb(31, 31, 31);
-}
-
-.github:hover {
-  transform: scale(1.04);
-  color: rgb(1, 1, 1);
-}
-
-.youtube {
-  color: rgb(255, 0, 0);
-}
-
-.youtube:hover {
-  transform: scale(1.04);
-  color: rgb(225, 0, 0);
+#youtube-card {
+  background-color: rgb(255, 0, 0);
+  color: rgb(255, 255, 255);
 }
 
 /* Footer */
-.footer {
+#footer {
   height: 62px;
   background-color: rgb(20, 20, 140);
   font-size: 18px;
@@ -550,28 +513,28 @@ body {
 
 /* RWD */
 @media (max-width: 1400px) {
-  #profile {
+  #profile-picture {
     width: 25%;
     height: auto;
   }
 
-  #port-picture {
+  .port-picture {
     width: 100%;
     height: auto;
   }
 
-  #cert-picture {
+  .cert-picture {
     width: 100%;
     height: auto;
   }
 
-  #cert-picture2 {
+  .cert-picture2 {
     width: 100%;
     height: auto;
   }
 }
 
-/* Button Top */
+/* Button To Top */
 #my-btn {
   display: none;
   position: fixed;

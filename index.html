@@ -32,13 +32,13 @@
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
 
-    <!-- Bootstrap 5 -->
+    <!-- Bootstrap -->
     <link
       rel="preload"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
       as="style"
       onload="this.onload = null; this.rel = 'stylesheet'"
-      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
       crossorigin="anonymous"
     />
 
@@ -70,7 +70,7 @@
   </head>
 
   <body oncopy="return false" oncut="return false" onpaste="return false">
-    <header id="header" class="header">
+    <header id="header">
       <nav id="nav" class="navbar fixed-top navbar-expand-lg navbar-dark">
         <div class="container">
           <a class="navbar-brand" href="/">Ervan Rahadian</a>
@@ -85,7 +85,7 @@
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <ion-icon class="menu" name="menu-outline"></ion-icon>
+            <ion-icon id="menu-icon" name="menu-outline"></ion-icon>
           </button>
 
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -134,53 +134,55 @@
       </nav>
     </header>
 
-    <section id="home" class="home">
-      <div class="jumbotron">
+    <section id="home">
+      <div id="jumbotron">
         <div class="container text-center">
           <img
-            id="profile"
+            id="profile-picture"
+            class="img-thumbnail"
             src="img/ERLogo.webp"
             width="300px"
             height="300px"
             alt="Ervan Rahadian"
             title="Ervan Rahadian"
-            class="img-thumbnail"
           />
 
-          <p id="first-text" class="display">ERVAN RAHADIAN</p>
+          <p id="profile-first-text" class="profile-display">ERVAN RAHADIAN</p>
 
-          <p id="second-text" class="display">WEB ENGINEER</p>
+          <p id="profile-second-text" class="profile-display">WEB ENGINEER</p>
 
-          <div class="roll">
-            <ion-icon class="html5" name="logo-html5"></ion-icon>
-            <ion-icon class="css3" name="logo-css3"></ion-icon>
-            <ion-icon class="js" name="logo-javascript"></ion-icon>
-            <ion-icon class="react" name="logo-react"></ion-icon>
-            <ion-icon class="node" name="logo-nodejs"></ion-icon>
-            <ion-icon class="firebase" name="logo-firebase"></ion-icon>
+          <div id="profile-roll">
+            <ion-icon id="html5-icon" name="logo-html5"></ion-icon>
+
+            <ion-icon id="css3-icon" name="logo-css3"></ion-icon>
+
+            <ion-icon id="js-icon" name="logo-javascript"></ion-icon>
+
+            <ion-icon id="react-icon" name="logo-react"></ion-icon>
+
+            <ion-icon id="node-icon" name="logo-nodejs"></ion-icon>
+
+            <ion-icon id="firebase-icon" name="logo-firebase"></ion-icon>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="about" class="about">
+    <section id="about">
       <div class="container space">
         <div class="row pb-4">
           <div
-            id="section-title"
-            class="col text-center"
+            class="col text-center section-title"
             data-aos="zoom-out"
             data-aos-duration="2000"
           >
-            <h2>
-              <ion-icon size="large" name="person"></ion-icon>&nbsp;About Me
-            </h2>
+            <h2><ion-icon size="large" name="person"></ion-icon>&nbsp;About</h2>
           </div>
         </div>
 
         <div class="row justify-content-center">
           <div class="col-md-5" data-aos="fade-right" data-aos-duration="2000">
-            <p id="about-text">
+            <p class="about-text">
               Hello, welcome to my personal website. On this occasion, allow me
               to make an introduction to who I am. My name is Ervan Rahadian
               Hakim. I am the first of three children. Currently, I live in
@@ -188,7 +190,7 @@
             </p>
           </div>
           <div class="col-md-5" data-aos="fade-left" data-aos-duration="2000">
-            <p id="about-text">
+            <p class="about-text">
               I am interested in software development, especially frontend web.
               I am familiar with React.js for building user interfaces as well
               as Redux for state management. I am technology enthusiast with a
@@ -199,18 +201,17 @@
       </div>
     </section>
 
-    <section id="portfolio" class="portfolio">
+    <section id="portfolio">
       <div class="container gradient space">
         <div class="row pb-4">
           <div
-            id="section-title"
-            class="col text-center"
+            class="col text-center section-title"
             data-aos="zoom-out"
             data-aos-duration="2000"
           >
             <h2>
-              <ion-icon size="large" name="document-text"></ion-icon>&nbsp;My
-              Portfolio
+              <ion-icon size="large" name="document-text"></ion-icon
+              >&nbsp;Portfolio
             </h2>
           </div>
         </div>
@@ -219,12 +220,11 @@
           <div class="col-md-6 col-xl-4 pb-4">
             <div class="card" data-aos="fade-right" data-aos-duration="2000">
               <img
-                id="port-picture"
+                class="card-img-top port-picture"
                 src="img/ERStore.webp"
                 loading="lazy"
                 width="404px"
                 height="227.25px"
-                class="card-img-top"
                 alt="ER Store"
                 title="ER Store"
               />
@@ -241,12 +241,11 @@
           <div class="col-md-6 col-xl-4 pb-4">
             <div class="card" data-aos="fade-up" data-aos-duration="2000">
               <img
-                id="port-picture"
+                class="card-img-top port-picture"
                 src="img/WeFame.webp"
                 loading="lazy"
                 width="404px"
                 height="227.25px"
-                class="card-img-top"
                 alt="WeFame"
                 title="WeFame"
               />
@@ -263,12 +262,11 @@
           <div class="col-md-6 col-xl-4 pb-4">
             <div class="card" data-aos="fade-left" data-aos-duration="2000">
               <img
-                id="port-picture"
+                class="card-img-top port-picture"
                 src="img/Loudid.webp"
                 loading="lazy"
                 width="404px"
                 height="227.25px"
-                class="card-img-top"
                 alt="Loud id"
                 title="Loud id"
               />
@@ -285,12 +283,11 @@
           <div class="col-md-6 col-xl-4 pb-4">
             <div class="card" data-aos="fade-right" data-aos-duration="2000">
               <img
-                id="port-picture"
+                class="card-img-top port-picture"
                 src="img/Walmart.webp"
                 loading="lazy"
                 width="404px"
                 height="227.25px"
-                class="card-img-top"
                 alt="Walmart"
                 title="Walmart"
               />
@@ -308,12 +305,11 @@
           <div class="col-md-6 col-xl-4 pb-4">
             <div class="card" data-aos="fade-up" data-aos-duration="2000">
               <img
-                id="port-picture"
+                class="card-img-top port-picture"
                 src="img/Amazon.webp"
                 loading="lazy"
                 width="404px"
                 height="227.25px"
-                class="card-img-top"
                 alt="Amazon"
                 title="Amazon"
               />
@@ -330,12 +326,11 @@
           <div class="col-md-6 col-xl-4 pb-4">
             <div class="card" data-aos="fade-left" data-aos-duration="2000">
               <img
-                id="port-picture"
+                class="card-img-top port-picture"
                 src="img/Steganography.webp"
                 loading="lazy"
                 width="404px"
                 height="227.25px"
-                class="card-img-top"
                 alt="Steganography"
                 title="Steganography"
               />
@@ -352,12 +347,11 @@
           <div class="col-md-6 col-xl-4 pb-4">
             <div class="card" data-aos="fade-right" data-aos-duration="2000">
               <img
-                id="port-picture"
+                class="card-img-top port-picture"
                 src="img/Showroom.webp"
                 loading="lazy"
                 width="404px"
                 height="227.25px"
-                class="card-img-top"
                 alt="Showroom"
                 title="Showroom"
               />
@@ -374,12 +368,11 @@
           <div class="col-md-6 col-xl-4 pb-4">
             <div class="card" data-aos="fade-up" data-aos-duration="2000">
               <img
-                id="port-picture"
+                class="card-img-top port-picture"
                 src="img/Pajak21.webp"
                 loading="lazy"
                 width="404px"
                 height="227.25px"
-                class="card-img-top"
                 alt="Pajak 21"
                 title="Pajak 21"
               />
@@ -396,12 +389,11 @@
           <div class="col-md-6 col-xl-4 pb-4">
             <div class="card" data-aos="fade-left" data-aos-duration="2000">
               <img
-                id="port-picture"
+                class="card-img-top port-picture"
                 src="img/AdobeXD.webp"
                 loading="lazy"
                 width="404px"
                 height="227.25px"
-                class="card-img-top"
                 alt="Adobe XD"
                 title="Adobe XD"
               />
@@ -418,12 +410,11 @@
           <div class="col-md-6 col-xl-4 pb-4">
             <div class="card" data-aos="fade-right" data-aos-duration="2000">
               <img
-                id="port-picture"
+                class="card-img-top port-picture"
                 src="img/AdobeIllustrator.webp"
                 loading="lazy"
                 width="404px"
                 height="227.25px"
-                class="card-img-top"
                 alt="Adobe Illustrator"
                 title="Adobe Illustrator"
               />
@@ -440,12 +431,11 @@
           <div class="col-md-6 col-xl-4 pb-4">
             <div class="card" data-aos="fade-up" data-aos-duration="2000">
               <img
-                id="port-picture"
+                class="card-img-top port-picture"
                 src="img/AdobeAnimate.webp"
                 loading="lazy"
                 width="404px"
                 height="227.25px"
-                class="card-img-top"
                 alt="Adobe Animate"
                 title="Adobe Animate"
               />
@@ -462,12 +452,11 @@
           <div class="col-md-6 col-xl-4 pb-4">
             <div class="card" data-aos="fade-left" data-aos-duration="2000">
               <img
-                id="port-picture"
+                class="card-img-top port-picture"
                 src="img/Art.webp"
                 loading="lazy"
                 width="404px"
                 height="227.25px"
-                class="card-img-top"
                 alt="Art"
                 title="Art"
               />
@@ -484,18 +473,17 @@
       </div>
     </section>
 
-    <section id="certification" class="certification">
+    <section id="certification">
       <div class="container gradient space">
         <div class="row pb-4">
           <div
-            id="section-title"
-            class="col text-center"
+            class="col text-center section-title"
             data-aos="zoom-out"
             data-aos-duration="2000"
           >
             <h2>
-              <ion-icon size="large" name="school"></ion-icon>&nbsp;My
-              Certification
+              <ion-icon size="large" name="school"></ion-icon
+              >&nbsp;Certification
             </h2>
           </div>
         </div>
@@ -511,26 +499,24 @@
               target="blank"
             >
               <img
-                id="cert-picture"
+                class="rounded cert-picture"
                 src="img/ResponsiveWebDesign.webp"
                 loading="lazy"
                 width="633px"
                 height="360.44px"
                 alt="Responsive Web Design"
                 title="Responsive Web Design"
-                class="img-thumbnail"
               />
             </a>
           </div>
           <div
-            id="cert-definition"
-            class="col-md-6 order-md-2 pt-4 pt-md-0 pt-lg-0"
+            class="col-md-6 order-md-2 pt-4 pt-md-0 pt-lg-0 cert-definition"
             data-aos="fade-left"
             data-aos-duration="2000"
           >
-            <div id="cert-div">
-              <p id="cert-title">Responsive Web Design</p>
-              <p id="cert-text">
+            <div>
+              <p class="cert-title">Responsive Web Design</p>
+              <p class="cert-text">
                 "Web Design" focuses on how websites should look and behave to
                 the end user. "Responsive" are expected to be just as accessible
                 on laptops, tablets and phones.
@@ -550,26 +536,24 @@
               target="blank"
             >
               <img
-                id="cert-picture"
+                class="rounded cert-picture"
                 src="img/FrontEndLibraries.webp"
                 loading="lazy"
                 width="633px"
                 height="360.44px"
                 alt="Front End Libraries"
                 title="Front End Libraries"
-                class="img-thumbnail"
               />
             </a>
           </div>
           <div
-            id="cert-definition"
-            class="col-md-6 order-md-1 pt-4 pt-md-0 pt-lg-0"
+            class="col-md-6 order-md-1 pt-4 pt-md-0 pt-lg-0 cert-definition"
             data-aos="fade-right"
             data-aos-duration="2000"
           >
-            <div id="cert-div">
-              <p id="cert-title">Front End Libraries</p>
-              <p id="cert-text">
+            <div>
+              <p class="cert-title">Front End Libraries</p>
+              <p class="cert-text">
                 "Front End" web development is the practice of converting data
                 to a graphical interface, through the use of HTML5, CSS3 and
                 JavaScript libraries like React.js, Vue.js and Angular.js. So
@@ -590,26 +574,24 @@
               target="blank"
             >
               <img
-                id="cert-picture"
+                class="rounded cert-picture"
                 src="img/DataVisualization.webp"
                 loading="lazy"
                 width="633px"
                 height="360.44px"
                 alt="Data Visualization"
                 title="Data Visualization"
-                class="img-thumbnail"
               />
             </a>
           </div>
           <div
-            id="cert-definition"
-            class="col-md-6 order-md-2 pt-4 pt-md-0 pt-lg-0"
+            class="col-md-6 order-md-2 pt-4 pt-md-0 pt-lg-0 cert-definition"
             data-aos="fade-left"
             data-aos-duration="2000"
           >
-            <div id="cert-div">
-              <p id="cert-title">Data Visualization</p>
-              <p id="cert-text">
+            <div>
+              <p class="cert-title">Data Visualization</p>
+              <p class="cert-text">
                 "Data Visualization" is the graphical representation of
                 information and data. By using visual elements like charts,
                 graphs and maps. Data visualization tools provide an accessible
@@ -630,26 +612,24 @@
               target="blank"
             >
               <img
-                id="cert-picture2"
+                class="rounded cert-picture2"
                 src="img/ProblemSolvingBasic.webp"
                 loading="lazy"
                 width="550px"
                 height="415px"
                 alt="Problem Solving (Basic)"
                 title="Problem Solving (Basic)"
-                class="img-thumbnail"
               />
             </a>
           </div>
           <div
-            id="cert-definition"
-            class="col-md-6 order-md-1 pt-4 pt-md-0 pt-lg-0"
+            class="col-md-6 order-md-1 pt-4 pt-md-0 pt-lg-0 cert-definition"
             data-aos="fade-right"
             data-aos-duration="2000"
           >
-            <div id="cert-div">
-              <p id="cert-title">Problem Solving (Basic)</p>
-              <p id="cert-text">
+            <div>
+              <p class="cert-title">Problem Solving (Basic)</p>
+              <p class="cert-text">
                 "Problem Solving" covers topics of Data Structures (such as
                 Arrays and Strings) and Algorithms (such as Sorting and
                 Searching).
@@ -669,26 +649,24 @@
               target="blank"
             >
               <img
-                id="cert-picture2"
+                class="rounded cert-picture2"
                 src="img/JavaScriptBasic.webp"
                 loading="lazy"
                 width="550px"
                 height="415px"
                 alt="JavaScript (Basic)"
                 title="JavaScript (Basic)"
-                class="img-thumbnail"
               />
             </a>
           </div>
           <div
-            id="cert-definition"
-            class="col-md-6 order-md-2 pt-4 pt-md-0 pt-lg-0"
+            class="col-md-6 order-md-2 pt-4 pt-md-0 pt-lg-0 cert-definition"
             data-aos="fade-left"
             data-aos-duration="2000"
           >
-            <div id="cert-div">
-              <p id="cert-title">JavaScript (Basic)</p>
-              <p id="cert-text">
+            <div>
+              <p class="cert-title">JavaScript (Basic)</p>
+              <p class="cert-text">
                 "JavaScript" covers topics like Functions, Currying, Hoisting,
                 Scope, Inheritance, Events and Error Handling.
               </p>
@@ -707,26 +685,24 @@
               target="blank"
             >
               <img
-                id="cert-picture2"
+                class="rounded cert-picture2"
                 src="img/ReactBasic.webp"
                 loading="lazy"
                 width="550px"
                 height="415px"
                 alt="React (Basic)"
                 title="React (Basic)"
-                class="img-thumbnail"
               />
             </a>
           </div>
           <div
-            id="cert-definition"
-            class="col-md-6 order-md-1 pt-4 pt-md-0 pt-lg-0"
+            class="col-md-6 order-md-1 pt-4 pt-md-0 pt-lg-0 cert-definition"
             data-aos="fade-right"
             data-aos-duration="2000"
           >
-            <div id="cert-div">
-              <p id="cert-title">React (Basic)</p>
-              <p id="cert-text">
+            <div>
+              <p class="cert-title">React (Basic)</p>
+              <p class="cert-text">
                 "React" covers topics like Basic Routing, Rendering Elements,
                 State Management (Internal Component State), Handling Events,
                 JavaScript (ES6) and Form Validation.
@@ -746,26 +722,24 @@
               target="blank"
             >
               <img
-                id="cert-picture2"
+                class="rounded cert-picture2"
                 src="img/CSS.webp"
                 loading="lazy"
                 width="550px"
                 height="415px"
                 alt="CSS"
                 title="CSS"
-                class="img-thumbnail"
               />
             </a>
           </div>
           <div
-            id="cert-definition"
-            class="col-md-6 order-md-2 pt-4 pt-md-0 pt-lg-0"
+            class="col-md-6 order-md-2 pt-4 pt-md-0 pt-lg-0 cert-definition"
             data-aos="fade-left"
             data-aos-duration="2000"
           >
-            <div id="cert-div">
-              <p id="cert-title">CSS</p>
-              <p id="cert-text">
+            <div>
+              <p class="cert-title">CSS</p>
+              <p class="cert-text">
                 "CSS" covers topics like exploring Cascading and Inheritance,
                 exploring text styling fundamentals, understanding the use of
                 layouts in CSS, understand the boxing of elements in CSS, among
@@ -777,103 +751,102 @@
       </div>
     </section>
 
-    <section id="contact" class="contact">
+    <section id="contact">
       <div class="container space">
         <div class="row pb-4">
           <div
-            id="section-title"
-            class="col text-center"
+            class="col text-center section-title"
             data-aos="zoom-out"
             data-aos-duration="2000"
           >
             <h2>
               <ion-icon size="large" name="chatbubbles"></ion-icon>&nbsp;Contact
-              Me
             </h2>
           </div>
         </div>
 
-        <div class="row">
-          <div id="contact-column" class="col-md text-center">
-            <h3 class="pb-4">
-              <a
-                id="gmail-logo"
-                href="mailto:ervanrahadian@gmail.com"
-                target="blank"
-                class="gmail contact-text"
+        <div class="row justify-content-center">
+          <div
+            class="col-md pb-4"
+            data-aos="fade-right"
+            data-aos-duration="2000"
+          >
+            <a href="https://github.com/ervanrahadian" target="blank">
+              <div id="github-card" class="contact-card rounded">
+                <ion-icon name="logo-github"></ion-icon>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-md">
+            <div class="row">
+              <div
+                class="col-md pb-4"
+                data-aos="fade-up"
+                data-aos-duration="2000"
+              >
+                <a
+                  href="https://www.linkedin.com/in/ervanrahadianhakim"
+                  target="blank"
+                >
+                  <div id="linkedin-card" class="contact-card rounded">
+                    <ion-icon name="logo-linkedin"></ion-icon>
+                  </div>
+                </a>
+              </div>
+
+              <div
+                class="col-md pb-4"
                 data-aos="fade-right"
                 data-aos-duration="2000"
               >
-                <ion-icon size="large" name="logo-google"></ion-icon>&nbsp;Gmail
-              </a>
-            </h3>
+                <a href="https://wa.me/6287757575717" target="blank">
+                  <div id="whatsapp-card" class="contact-card rounded">
+                    <ion-icon name="logo-whatsapp"></ion-icon>
+                  </div>
+                </a>
+              </div>
+            </div>
 
-            <h3 class="pb-4">
-              <a
-                id="whatsapp-logo"
-                href="https://wa.wizard.id/9df1d8"
-                target="blank"
-                class="whatsapp contact-text"
+            <div class="row">
+              <div
+                class="col-md pb-4"
                 data-aos="fade-left"
                 data-aos-duration="2000"
               >
-                <ion-icon size="large" name="logo-whatsapp"></ion-icon
-                >&nbsp;WhatsApp
-              </a>
-            </h3>
+                <a href="mailto:ervanrahadian@gmail.com" target="blank">
+                  <div id="google-card" class="contact-card rounded">
+                    <ion-icon name="logo-google"></ion-icon>
+                  </div>
+                </a>
+              </div>
 
-            <h3 class="pb-4">
-              <a
-                id="linkedin-logo"
-                href="https://www.linkedin.com/in/ervan-rahadian-hakim-23011a1b5/"
-                target="blank"
-                class="linkedin contact-text"
-                data-aos="fade-right"
+              <div
+                class="col-md pb-4"
+                data-aos="fade-down"
                 data-aos-duration="2000"
               >
-                <ion-icon size="large" name="logo-linkedin"></ion-icon
-                >&nbsp;LinkedIn
-              </a>
-            </h3>
-
-            <h3 class="pb-4">
-              <a
-                id="github-logo"
-                href="https://github.com/ervanrahadian"
-                target="blank"
-                class="github contact-text"
-                data-aos="fade-left"
-                data-aos-duration="2000"
-              >
-                <ion-icon size="large" name="logo-github"></ion-icon
-                >&nbsp;GitHub
-              </a>
-            </h3>
-
-            <h3>
-              <a
-                id="youtube-logo"
-                href="https://www.youtube.com/channel/UCpErBQ6lJDJxepx6Trlph9g"
-                target="blank"
-                class="youtube contact-text"
-                data-aos="fade-right"
-                data-aos-duration="2000"
-              >
-                <ion-icon size="large" name="logo-youtube"></ion-icon
-                >&nbsp;YouTube
-              </a>
-            </h3>
+                <a
+                  href="https://www.youtube.com/channel/UCpErBQ6lJDJxepx6Trlph9g"
+                  target="blank"
+                >
+                  <div id="youtube-card" class="contact-card rounded">
+                    <ion-icon name="logo-youtube"></ion-icon>
+                  </div>
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <footer id="footer" class="footer">
+    <footer id="footer">
       <div class="container">
         <div class="row pt-3">
           <div class="col text-center">
             <p>
-              Copyright &copy; 2022 -
+              Copyright &copy; 2023 -
               <a id="footer-text" href="/">Ervan Rahadian</a>
             </p>
           </div>
@@ -885,7 +858,7 @@
       <ion-icon size="large" name="chevron-up-outline"></ion-icon>
     </button>
 
-    <!-- Button Setting -->
+    <!-- Button To Top -->
     <script>
       var mybutton = document.getElementById("my-btn");
 
@@ -910,10 +883,10 @@
       }
     </script>
 
-    <!-- jQuery Setting -->
+    <!-- jQuery -->
     <script
-      src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
-      integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI="
+      src="https://code.jquery.com/jquery-3.6.1.slim.min.js"
+      integrity="sha256-w8CvhFs7iHNVUtnSP0YKEg00p9Ih13rlL9zGqvLdePA="
       crossorigin="anonymous"
     ></script>
     <script>
@@ -922,7 +895,7 @@
       });
     </script>
 
-    <!-- PWA Setting -->
+    <!-- PWA -->
     <script>
       if ("serviceWorker" in navigator) {
         window.addEventListener("load", () => {
@@ -937,10 +910,10 @@
       AOS.init();
     </script>
 
-    <!-- Bootstrap 5 -->
+    <!-- Bootstrap -->
     <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
       crossorigin="anonymous"
     ></script>
   </body>
